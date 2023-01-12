@@ -207,13 +207,13 @@
                         <i class="far fa-dot-circle text-info position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
                         <h5 class="font-weight-bold mb-1">Nine Technology</h5>
                         <p class="mb-2"><strong>Intern Software Engineer</strong> | <small>Feb 2022 - August 2022</small></p>
-                        <p>
-                            While working at Nine Technology, I worked in the Productivity team which developed platforms and tools 
-                            to support the work processes of the engineering teams at Nine. I was responsible for improving the service 
-                            portal which was used for the engineering teams at Nine to track their designated projects and health 
-                            (code quality) of their respositories. Streamlining this service enabled the engineering teams to easily 
-                            check the health of their code repositories in order to make updates and improvements.
-                            <p>Responsibilities and Achievements:</p>
+                        While working at Nine Technology, I worked in the Productivity team which developed platforms and tools 
+                        to support the work processes of the engineering teams at Nine. I was responsible for improving the service 
+                        portal which was used for the engineering teams at Nine to track their designated projects and health 
+                        (code quality) of their respositories. Streamlining this service enabled the engineering teams to easily 
+                        check the health of their code repositories in order to make updates and improvements.
+                        <button class="collapsible">Responsibilities and Achievements:</button>
+                        <div class="content">
                             <ul>
                                 <li>
                                     Developing team productivity and service health tools using Backstage.io, ReactJS and Typescript
@@ -234,23 +234,23 @@
                                     Attended daily scrum meetings and hosted meetings on rotation, facilitating team discussion of updates or blockers
                                 </li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                     <div class="position-relative ex-me mb-4">
                         <i class="far fa-dot-circle text-info position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
                         <div class="timeline-content" style="left: 0;">
                             <h5 class="font-weight-bold mb-1">WooliesX</h5>
                             <p class="mb-2"><strong>Associate Software Engineer</strong> | <small>Nov 2021 - Feb 2022</small></p>
-                            <p>
                             As part of the Code Like a Girl internship program, I was connected with WooliesX. Within my team, I was responsible for creating front-end components for the BigW portal.
-                            <p>Responsibilities and Achievements:</p>
+                            <button class="collapsible">Responsibilities and Achievements:</button>
+                            <div class="content">
                                 <ul>
                                     <li>Used Adobe Experience Manager to develop front-end components for the BigW Team Store Portal</li>
                                     <li>Applied HTML, SCSS and Javascript frameworks</li>
                                     <li>Gained experience with Github, creating pull requests and deploying software</li>
                                     <li>By the conclusion of my internship, I shared my learnings in a presentation to my engineering chapter as well as the intern cohort at Code Like a Girl</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div class="position-relative ex-me mb-4">
@@ -258,30 +258,30 @@
                         <h5 class="font-weight-bold mb-1">Australian Securities Exchange (ASX)</h5>
                         <p class="mb-2"><strong>Junior Digital Analyst</strong> | <small>Jun 2020 - October 2021</small></p>
                         <p class="mb-2"><strong>Corporate Technology Intern</strong> | <small>Nov 2019 - Feb 2020</small></p>
-                        <p>
-                            At ASX I worked in the quality team performing testing, quality assurance and data validation on various services and products.
-                            <p>Responsibilities and Achievements:</p>
+                        At ASX I worked in the quality team performing testing, quality assurance and data validation on various services and products.
+                        <button class="collapsible">Responsibilities and Achievements:</button>
+                        <div class="content">
                             <ul>
                                 <li>Performed testing on the ASX digital services platform, with reach of 2 million users a month</li>
                                 <li>Gained proficiency with Jira and Confluence for reporting and tracking defects, creating issues and documentation</li>
                                 <li>Reported CHESS Estatements platform defects through regression testing and data validation</li>
                                 <li>Monitored GoCD pipelines and conduct Google Cloud Platform logging and monitoring</li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                     <div class="position-relative ex-me mb-4">
                         <i class="far fa-dot-circle text-info position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
                         <h5 class="font-weight-bold mb-1">CUSCAL Limited</h5>
                         <p class="mb-2"><strong>Software Engineering Intern</strong> | <small>Aug 2020 - Feb 2021</small></p>
-                        <p>
-                            At CUSCAL I worked with the Technology & Project Services team to develop a new portal to simplify the onboarding process for new recruits.
-                            <p>Responsibilities and Achievements:</p>
+                        At CUSCAL I worked with the Technology & Project Services team to develop a new portal to simplify the onboarding process for new recruits.
+                        <button class="collapsible">Responsibilities and Achievements:</button>
+                        <div class="content">
                             <ul>
                                 <li>Applied JavaScript and Angular to develop the company onboarding portal</li>
                                 <li>Gained experience with Git and Bitbucket, including creating branches, commits, pull requests and pushing code</li>
                                 <li>Supported mobile development projects through testing</li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -534,6 +534,21 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("open");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
 
     <!-- JavaScript Libraries -->
     <!-- JavaScript Libraries -->
@@ -552,6 +567,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

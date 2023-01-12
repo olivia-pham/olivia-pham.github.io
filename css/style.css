@@ -13,8 +13,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
- 
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -247,3 +245,4 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 20px;
   margin: 10px;
 }
+
